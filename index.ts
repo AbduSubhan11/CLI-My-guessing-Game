@@ -13,7 +13,7 @@ const answer = await inquirer.prompt([
     },
 ]);
 
-if (answer === targetNumber){
+if (answer.userNumber === targetNumber){
     console.log(`Congratulations! you guessed the right number`)
 }else{
     console.log(`You guessed wrong number`)
