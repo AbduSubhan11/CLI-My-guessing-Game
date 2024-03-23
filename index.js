@@ -8,7 +8,7 @@ const answer = await inquirer.prompt([
         message: "Please guess a number between 1-20",
     },
 ]);
-if (answer === targetNumber) {
+if (answer.userNumber === targetNumber) {
     console.log(`Congratulations! you guessed the right number`);
 }
 else {
